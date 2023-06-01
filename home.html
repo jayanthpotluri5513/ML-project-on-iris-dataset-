@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <h1>Predicting class of flower using ML</h1>
+        <form action='/predict' method="POST">
+            Sepal_Length: <input type='text' placeholder="Sepal_length" name='sepal_length'><br>
+            Sepal_Width: <input type='text' placeholder="Sepal_width" name='sepal_width'><br>
+            
+            Petal_Length: <input type='text' placeholder="Petal_length" name='petal_length'><br>
+            Petal_Width: <input type='text' placeholder="Petal_width" name='petal_width'><br>
+            <br>
+            Class:  {{ result if result else "" }} <br>
+            <input type='submit' value='predict'>
+        </form>
+    </body>
+</html>
